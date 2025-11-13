@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const typedElement = document.getElementById('typed');
     if (typedElement) {
         new Typed('#typed', {
-            strings: ['Kaiya Cooper', 'an Information Systems Student', 'a Problem Solver', 'a Tech Enthusiast', 'an Innovation Advocate'],
+            strings: ['Kaiya Cooper', 'an Information Systems Student', 'a Creative Developer', 'a Tech Enthusiast', 'an Innovation Advocate'],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 2000,
