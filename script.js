@@ -22,9 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Rest of the script.js file stays the same...
-[Keep all the other code from the previous script.js file]
-
 // Particles.js configuration
 if (document.getElementById('particles-js')) {
     particlesJS('particles-js', {
@@ -40,25 +37,15 @@ if (document.getElementById('particles-js')) {
                 value: '#ffffff'
             },
             shape: {
-                type: 'circle',
-                stroke: {
-                    width: 0,
-                    color: '#000000'
-                }
+                type: 'circle'
             },
             opacity: {
                 value: 0.5,
-                random: false,
-                anim: {
-                    enable: false
-                }
+                random: false
             },
             size: {
                 value: 3,
-                random: true,
-                anim: {
-                    enable: false
-                }
+                random: true
             },
             line_linked: {
                 enable: true,
@@ -74,10 +61,7 @@ if (document.getElementById('particles-js')) {
                 random: false,
                 straight: false,
                 out_mode: 'out',
-                bounce: false,
-                attract: {
-                    enable: false
-                }
+                bounce: false
             }
         },
         interactivity: {
@@ -92,31 +76,6 @@ if (document.getElementById('particles-js')) {
                     mode: 'push'
                 },
                 resize: true
-            },
-            modes: {
-                grab: {
-                    distance: 400,
-                    line_linked: {
-                        opacity: 1
-                    }
-                },
-                bubble: {
-                    distance: 400,
-                    size: 40,
-                    duration: 2,
-                    opacity: 8,
-                    speed: 3
-                },
-                repulse: {
-                    distance: 200,
-                    duration: 0.4
-                },
-                push: {
-                    particles_nb: 4
-                },
-                remove: {
-                    particles_nb: 2
-                }
             }
         },
         retina_detect: true
@@ -169,66 +128,3 @@ function animateSkillBars() {
 
 // Initialize skill bar animations
 document.addEventListener('DOMContentLoaded', animateSkillBars);
-
-// Contact form handling (basic validation)
-const contactForm = document.querySelector('.contact-form form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const subject = this.querySelectorAll('input[type="text"]')[1].value;
-        const message = this.querySelector('textarea').value;
-        
-        // Basic validation
-        if (name && email && subject && message) {
-            // Here you would typically send the form data to a server
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        } else {
-            alert('Please fill in all fields.');
-        }
-    });
-}
-
-// Add loading animation
-window.addEventListener('load', function() {
-    document.body.classList.add('loaded');
-});
-
-// Mobile menu toggle (if needed)
-function toggleMobileMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('mobile-active');
-}
-
-// Add resize event listener for responsive adjustments
-window.addEventListener('resize', function() {
-    // Refresh particles on window resize
-    if (window.pJSDom && window.pJSDom[0] && window.pJSDom[0].pJS) {
-        window.pJSDom[0].pJS.fn.vendors.resize();
-    }
-});
-
-// Preloader (optional)
-function hidePreloader() {
-    const preloader = document.querySelector('.preloader');
-    if (preloader) {
-        preloader.style.opacity = '0';
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 300);
-    }
-}
-
-// Initialize everything when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    // Hide preloader after a short delay
-    setTimeout(hidePreloader, 1500);
-    
-    // Add any additional initialization here
-    console.log('Portfolio loaded successfully!');
-});
