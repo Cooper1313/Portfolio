@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Your Name</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span id="typed"></span></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Information Systems Student & Technology Enthusiast</p>
+            <div class="buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="projects.html" class="btn primary">View Projects</a>
+                <a href="resume.pdf" class="btn secondary">Resume</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-in" data-aos-delay="800">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Quick Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2 data-aos="fade-up">What I Do</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>SQL, Database Design, Data Modeling</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Data Analysis</h3>
+                    <p>Excel, Power BI, Statistical Analysis</p>
+                </div>
+                <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Systems Analysis</h3>
+                    <p>Process Improvement, Requirements Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
