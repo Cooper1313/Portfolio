@@ -43,17 +43,17 @@
                 <div class="skill-item">
                     <i class="fas fa-robot"></i>
                     <h3>AI & Technology</h3>
-                    <p>Artificial Intelligence, Prompt Engineering, IoT Development, Educational Technology</p>
+                    <p>Artificial Intelligence, Prompt Engineering, IoT Development</p>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-code"></i>
                     <h3>Development</h3>
-                    <p>C++, JavaScript, Python, 3D Modeling, Web Design, Arduino Programming</p>
+                    <p>C++, JavaScript, Python, 3D Modeling, Web Design</p>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-lightbulb"></i>
                     <h3>Business Innovation</h3>
-                    <p>Process Improvement, Project Management, Strategic Planning, Digital Transformation</p>
+                    <p>Process Improvement, Project Management, Strategic Planning</p>
                 </div>
             </div>
         </div>
@@ -65,10 +65,12 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            console.log('Loading...');
+            
             // Initialize Typed.js
             if (document.getElementById('typed')) {
                 new Typed('#typed', {
-                    strings: ['Kaiya Cooper', 'an Information Systems Student', 'a Problem Solver', 'a Tech Enthusiast'],
+                    strings: ['Kaiya Cooper', 'an Information Systems Student', 'a Problem Solver'],
                     typeSpeed: 50,
                     backSpeed: 30,
                     backDelay: 2000,
@@ -82,11 +84,7 @@
                     particles: {
                         number: { value: 50 },
                         color: { value: '#ffffff' },
-                        line_linked: {
-                            enable: true,
-                            color: '#ffffff',
-                            opacity: 0.4
-                        },
+                        line_linked: { enable: true, color: '#ffffff', opacity: 0.4 },
                         move: { enable: true, speed: 2 }
                     }
                 });
