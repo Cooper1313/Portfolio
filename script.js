@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const typedElement = document.getElementById('typed');
     if (typedElement) {
         new Typed('#typed', {
-            strings: ['Your Name', 'an Information Systems Student', 'a Problem Solver', 'a Tech Enthusiast'],
+            strings: ['Kaiya Cooper', 'an Information Systems Student', 'a Problem Solver', 'a Tech Enthusiast', 'an Innovation Advocate'],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 2000,
@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Rest of the script.js file stays the same...
+[Keep all the other code from the previous script.js file]
 
 // Particles.js configuration
 if (document.getElementById('particles-js')) {
